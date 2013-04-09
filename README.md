@@ -1,11 +1,11 @@
 # tdbwriter
 =========
 
-Write a pseudo-random number (`random.random() * 50.0`) to a TempoDB database every second.
+Write a pseudo-random number (`random.random() * 50.0`) to a [TempoDB](https://tempo-db.com/) database every second.
 
 ## Instructions:
 
-You should use `virtualenv` to run this project.
+Use [`virtualenv`](http://www.virtualenv.org/en/latest/).
 
 ```batch
 $ virtualenv tdbwriter
@@ -20,6 +20,6 @@ $ python tdbwriter.py
 
 The program uses environment variables to set up its connection to the database:
 
-`API_KEY`, `API_SECRET` - these are required. They can be found on your Database Management page at https://tempo-db.com/manage/
+`API_KEY`, `API_SECRET` - these are required. They can be found on your [Database Management page](https://tempo-db.com/manage/)
 
 `SERIES_KEY` - defaults to `prng` if not specified.
